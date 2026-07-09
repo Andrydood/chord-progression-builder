@@ -24,20 +24,6 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-  @theme {
-    --color-cream: #1c1712;
-    --color-card: #262019;
-    --color-ink: #f3ece1;
-    --color-ink-soft: #cabfaf;
-    --color-muted: #92887a;
-    --color-line: #3a3128;
-  }
-}
-
 body {
   background: var(--color-cream);
   color: var(--color-ink);
