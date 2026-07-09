@@ -193,6 +193,7 @@ export default function Home() {
             Every chord has a vibe. Every jump to the next one has its own plot twist.
             Build your own below — or steal a progression the pros already figured out.
           </p>
+          <p className="text-muted text-xs">Turn your volume up and silent mode off to hear it.</p>
         </header>
 
         {/* Chord picker */}
