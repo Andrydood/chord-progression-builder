@@ -234,7 +234,7 @@ export default function Home() {
                 <button
                   onClick={() => editFromSlot(i)}
                   disabled={degree === null}
-                  className={`w-full h-28 sm:w-36 sm:h-40 rounded-2xl border flex flex-col items-center justify-center gap-1 sm:gap-2 transition ${
+                  className={`w-full h-28 sm:w-32 sm:h-36 rounded-2xl border flex flex-col items-center justify-center gap-1 transition ${
                     degree !== null
                       ? `bg-card ${DEGREE_BORDER[degree]}/50 hover:brightness-95 cursor-pointer`
                       : i === currentIndex
@@ -244,11 +244,11 @@ export default function Home() {
                 >
                   {degree !== null ? (
                     <>
-                      <span className={`font-display italic text-4xl sm:text-7xl ${DEGREE_ACCENT[degree]}`}>
+                      <span className={`font-display italic text-4xl sm:text-6xl ${DEGREE_ACCENT[degree]}`}>
                         {DEGREES[degree]}
                       </span>
-                      <span className="text-xs sm:text-base text-muted">{chordLabel(musicKey, degree)}</span>
-                      <span className="sm:hidden text-[11px] text-ink-soft italic text-center leading-tight px-1">
+                      <span className="text-xs sm:text-sm text-muted">{chordLabel(musicKey, degree)}</span>
+                      <span className="text-base sm:text-sm text-ink-soft italic text-center leading-tight px-1">
                         {DEGREE_MOOD[degree]}
                       </span>
                     </>
@@ -259,11 +259,11 @@ export default function Home() {
                   )}
                 </button>
                 {i < slots.length - 1 && (
-                  <div className="hidden sm:flex flex-col items-center justify-center w-20 text-center">
+                  <div className="hidden sm:flex flex-col items-center justify-center w-16 text-center">
                     {slots[i] !== null && slots[i + 1] !== null ? (
                       <>
                         <ArrowIcon />
-                        <span className="text-sm text-ink-soft italic mt-0.5 leading-tight">
+                        <span className="text-xs text-ink-soft italic mt-0.5 leading-tight">
                           {getTransitionMood(slots[i] as Degree, slots[i + 1] as Degree)}
                         </span>
                       </>
