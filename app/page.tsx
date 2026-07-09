@@ -190,8 +190,9 @@ export default function Home() {
             Chord Progression Builder
           </h1>
           <p className="text-ink-soft text-base sm:text-lg max-w-xl mx-auto">
-            Every chord has a vibe. Every jump to the next one has its own plot twist.
-            Build your own below — or steal a progression the pros already figured out.
+            Every chord has a vibe. Every jump to the next one a plot twist
+            <br />
+            Build your own progression or steal one from the pros
           </p>
           <p className="text-muted text-xs">Turn your volume up and silent mode off to hear it.</p>
         </header>
