@@ -78,7 +78,7 @@ function DrumIcon() {
 
 export default function Home() {
   const [musicKey, setMusicKey] = useState<Key>("C");
-  const [style, setStyle] = useState<Style>("piano");
+  const [style, setStyle] = useState<Style>("rock");
   const [bpm, setBpm] = useState(DEFAULT_BPM);
   const [drumsOn, setDrumsOn] = useState(true);
   const [slots, setSlots] = useState<(Degree | null)[]>([null, null, null, null]);
